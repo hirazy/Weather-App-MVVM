@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vmodel"
+            type="com.example.weather_app_mvvp.app.model.entity.WeatherDetail" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@{vmodel.getTime()}"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            app:tint="@color/blue"
+            app:weatherIcon="@{vmodel.weather[0].icon}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="@{vmodel.getTemp()}"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</layout>

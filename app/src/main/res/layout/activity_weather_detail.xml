@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vmodel"
+            type="com.example.weather_app_mvvp.app.ui.weatherDetail.WeatherDetailViewmodel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".app.ui.weatherDetail.WeatherDetailActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:onClick="@{()->vmodel.finish()}"
+                android:padding="@dimen/_5sdp"
+                android:src="@mipmap/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Hanoi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:cornerRadiusTL="@dimen/_20sdp"
+            app:cornerRadiusTR="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@{vmodel.weather1DayDetail.setColor()}">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center"
+                            android:text="@{vmodel.weather1DayDetail.setDate()}"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_35ssp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_130sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:src="@drawable/a10d_svg"
+                            app:weatherIcon="@{vmodel.weather1DayDetail.weatherShow.weather[0].icon}" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center"
+                            android:text="@{vmodel.weather1DayDetail.getTempShow() +`°`}"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_40ssp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:text="@{vmodel.weather1DayDetail.tempMin +`°`}"
+                                android:textColor="@color/gray50"
+                                android:textSize="@dimen/_25ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="@{vmodel.weather1DayDetail.tempMax +`°`}"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_25ssp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <com.loopeer.shadow.ShadowView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:cornerRadius="@dimen/_10sdp">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcvWeatherDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                        </com.loopeer.shadow.ShadowView>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+        </com.loopeer.shadow.ShadowView>
+    </LinearLayout>
+</layout>
