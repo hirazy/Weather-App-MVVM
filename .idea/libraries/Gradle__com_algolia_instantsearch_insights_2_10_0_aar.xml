@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.algolia:instantsearch-insights:2.10.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-insights/2.10.0/763d8de46d6a5a84f0612502bbdfe08778014a92/instantsearch-insights-2.10.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-insights/2.10.0/1fbddf2ca5750ac77681c13fff8114f78121d27b/instantsearch-insights-2.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

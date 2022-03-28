@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.algolia:instantsearch-android-core:2.10.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-android-core/2.10.0/3ed6cf769a501189796b1332fbe96a2bfaa2608c/instantsearch-android-core-2.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-android-core/2.10.0/692a77a22e0619f65dd4b3a3c4d5160b5eee78e8/instantsearch-android-core-2.10.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-android-core/2.10.0/e0f7d1974f54a461ba7a26567feefbdd5ef71a2d/instantsearch-android-core-2.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
