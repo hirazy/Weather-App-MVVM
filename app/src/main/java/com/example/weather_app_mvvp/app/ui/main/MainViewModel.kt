@@ -19,6 +19,8 @@ import com.example.weather_app_mvvp.app.utils.Constants
 import com.example.weather_app_mvvp.app.utils.Utils
 import com.example.weather_app_mvvp.base.ui.BaseViewModel
 import com.google.gson.Gson
+import io.reactivex.Observable
+import io.reactivex.Observer
 import io.reactivex.Single
 import org.json.JSONObject
 
