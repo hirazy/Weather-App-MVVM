@@ -61,13 +61,13 @@ data class Weather1DayDetail(var listData: List<WeatherDetail>) : OBase(), Seria
     fun setColor(): Int {
         var dt: Long = weatherShow.dt.toLong()
         when (dt?.let { getDateTime(it) }) {
-            DayOfWeek.MONDAY -> return Color.parseColor("#28E0AE")
-            DayOfWeek.TUESDAY -> return Color.parseColor("#FF0090")
-            DayOfWeek.WEDNESDAY -> return Color.parseColor("#FFAE00")
-            DayOfWeek.THURSDAY -> return Color.parseColor("#0090FF")
-            DayOfWeek.FRIDAY -> return Color.parseColor("#DC0000")
-            DayOfWeek.SATURDAY -> return Color.parseColor("#0051FF")
-            DayOfWeek.SUNDAY -> return Color.parseColor("#3D28E0")
+            DayOfWeek.MONDAY -> return Color.parseColor("#8028E0AE")
+            DayOfWeek.TUESDAY -> return Color.parseColor("#80FF0090")
+            DayOfWeek.WEDNESDAY -> return Color.parseColor("#80FFAE00")
+            DayOfWeek.THURSDAY -> return Color.parseColor("#800090FF")
+            DayOfWeek.FRIDAY -> return Color.parseColor("#80DC0000")
+            DayOfWeek.SATURDAY -> return Color.parseColor("#800051FF")
+            DayOfWeek.SUNDAY -> return Color.parseColor("#803D28E0")
             else -> return Color.parseColor("#28E0AE")
         }
     }

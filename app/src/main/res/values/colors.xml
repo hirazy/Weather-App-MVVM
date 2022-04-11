@@ -17,4 +17,12 @@
     <color name="blue_150">#3D28E0</color>
     <color name="gray50">#BBBBBB</color>
 
+    <color name="colorMonday">#8028E0AE</color>
+    <color name="colorTuesday">#80FF0090</color>
+    <color name="colorWednesday">#80FFAE00</color>
+    <color name="colorThursday">#800090FF</color>
+    <color name="colorFriday">#80DC0000</color>
+    <color name="colorSaturday">#800051FF</color>
+    <color name="colorSunday">#803D28E0</color>
+
 </resources>

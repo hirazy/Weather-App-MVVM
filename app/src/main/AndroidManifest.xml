@@ -7,23 +7,38 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".app.ui.launcher.LauncherActivity">
+        <activity
+            android:name=".app.ui.setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".app.ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.ui.weatherDetail.WeatherDetailActivity" />
-        <activity android:name=".app.ui.dashbroad.DashBroadActivity"></activity>
-        <activity android:name=".app.ui.main.MainActivity">
-
-        </activity>
+        <activity
+            android:name=".app.ui.weatherDetail.WeatherDetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".app.ui.dashbroad.DashBroadActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".app.ui.main.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".app.ui.launcher.LauncherActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

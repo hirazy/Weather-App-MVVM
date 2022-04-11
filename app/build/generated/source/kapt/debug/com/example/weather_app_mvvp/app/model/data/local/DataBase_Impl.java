@@ -36,7 +36,7 @@ public final class DataBase_Impl extends DataBase {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `CITY_ITEM` (`country` TEXT, `countryCode` TEXT, `isCity` INTEGER, `isCountry` INTEGER, `administrative` TEXT, `adminLevel` INTEGER, `postcode` TEXT, `county` TEXT, `geoloc` TEXT, `importance` INTEGER, `objectID` TEXT, `isSuburb` INTEGER, `localeNames` TEXT, `id` INTEGER, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Weather5DayData` (`cod` TEXT NOT NULL, `message` INTEGER NOT NULL, `cnt` INTEGER NOT NULL, `listDataDetail` TEXT NOT NULL, `city` TEXT NOT NULL, `id` INTEGER, PRIMARY KEY(`id`))");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `WeatherInfo` (`colorStatus` INTEGER NOT NULL, `coord` TEXT NOT NULL, `weather` TEXT NOT NULL, `base` TEXT NOT NULL, `main` TEXT NOT NULL, `visibility` INTEGER NOT NULL, `wind` TEXT NOT NULL, `clouds` TEXT NOT NULL, `dt` INTEGER NOT NULL, `sys` TEXT NOT NULL, `timezone` INTEGER NOT NULL, `name` TEXT NOT NULL, `cod` INTEGER NOT NULL, `id` INTEGER, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `WeatherInfo` (`coord` TEXT NOT NULL, `weather` TEXT NOT NULL, `base` TEXT NOT NULL, `main` TEXT NOT NULL, `visibility` INTEGER NOT NULL, `wind` TEXT NOT NULL, `clouds` TEXT NOT NULL, `dt` INTEGER NOT NULL, `sys` TEXT NOT NULL, `timezone` INTEGER NOT NULL, `name` TEXT NOT NULL, `cod` INTEGER NOT NULL, `id` INTEGER, `colorStatus` INTEGER NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
         _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2be4a1517df92fa08505234879c209aa')");
       }
@@ -125,7 +125,6 @@ public final class DataBase_Impl extends DataBase {
                   + " Found:\n" + _existingWeather5DayData);
         }
         final HashMap<String, TableInfo.Column> _columnsWeatherInfo = new HashMap<String, TableInfo.Column>(14);
-        _columnsWeatherInfo.put("colorStatus", new TableInfo.Column("colorStatus", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeatherInfo.put("coord", new TableInfo.Column("coord", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeatherInfo.put("weather", new TableInfo.Column("weather", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeatherInfo.put("base", new TableInfo.Column("base", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -139,6 +138,7 @@ public final class DataBase_Impl extends DataBase {
         _columnsWeatherInfo.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeatherInfo.put("cod", new TableInfo.Column("cod", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeatherInfo.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWeatherInfo.put("colorStatus", new TableInfo.Column("colorStatus", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysWeatherInfo = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesWeatherInfo = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoWeatherInfo = new TableInfo("WeatherInfo", _columnsWeatherInfo, _foreignKeysWeatherInfo, _indicesWeatherInfo);
@@ -150,7 +150,7 @@ public final class DataBase_Impl extends DataBase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "2be4a1517df92fa08505234879c209aa", "5a7d093df9308dce33cd4cfbbd5e120d");
+    }, "2be4a1517df92fa08505234879c209aa", "2aede0e27d1dce5c3b030c7148faf267");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

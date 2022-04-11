@@ -1,29 +1,15 @@
 package com.example.weather_app_mvvp.app.ui.main
 
 import android.app.Activity.RESULT_OK
-import android.content.Intent
-import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
-import com.algolia.search.saas.AlgoliaException
-import com.algolia.search.saas.CompletionHandler
-import com.algolia.search.saas.places.PlacesClient
-import com.algolia.search.saas.places.PlacesQuery
 import com.example.weather_app_mvvp.app.model.data.respository.MainAcRespository
-import com.example.weather_app_mvvp.app.model.entity.City
 import com.example.weather_app_mvvp.app.model.entity.CityItem
 import com.example.weather_app_mvvp.app.model.entity.SearchResponse
-import com.example.weather_app_mvvp.app.model.entity.WeatherInfo
 import com.example.weather_app_mvvp.app.ui.dashbroad.DashBroadActivity
 import com.example.weather_app_mvvp.app.utils.Constants
 import com.example.weather_app_mvvp.app.utils.Utils
 import com.example.weather_app_mvvp.base.ui.BaseViewModel
-import com.google.gson.Gson
-import io.reactivex.Observable
-import io.reactivex.Observer
-import io.reactivex.Single
-import org.json.JSONObject
-
 
 class MainViewModel : BaseViewModel() {
 
@@ -40,7 +26,6 @@ class MainViewModel : BaseViewModel() {
         } else {
             Toast.makeText(context, "Need internet", Toast.LENGTH_LONG).show()
         }
-
     }
 
 

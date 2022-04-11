@@ -1,10 +1,10 @@
 package com.example.weather_app_mvvp.app.ui.dashbroad
 
 import android.content.Intent
-import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.weather_app_mvvp.R
 import com.example.weather_app_mvvp.app.adapter.RcvDashbroadAdapter
 import com.example.weather_app_mvvp.app.model.entity.Weather1DayDetail
@@ -15,21 +15,26 @@ import com.example.weather_app_mvvp.base.ui.BaseActivity
 import com.example.weather_app_mvvp.base.utils.LayoutId
 import com.example.weather_app_mvvp.databinding.ActivityDashBroadBinding
 import kotlinx.android.synthetic.main.activity_dash_broad.*
+import java.util.*
+
 
 @LayoutId(R.layout.activity_dash_broad)
 class DashBroadActivity : BaseActivity<ActivityDashBroadBinding, DashBroadViewModel>() {
 
     val REQUEST_CODE_START_FOR_RESULT = 1
     lateinit var adapter: RcvDashbroadAdapter
+    private var mViewHolder: ViewHolder? = null
+
+
     override fun initObserve() {
         ViewBiding.vmodel = viewModel
     }
 
     override fun initView() {
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         viewModel.getDataCityWeather()
         viewModel.getDataWeatherFor5Day()
+
 
         adapter = RcvDashbroadAdapter(object : BaseViewListener {
             override fun onItemClicked(index: Int, data: OBase) {
@@ -44,16 +49,37 @@ class DashBroadActivity : BaseActivity<ActivityDashBroadBinding, DashBroadViewMo
 
             }
         })
+
+//        Picasso.get()
+//            .load(R.mipmap.bg_city)
+//            .transform(BlurTransformation(this, 25, 1 ))
+//            .into(imgDashboard)
+
         rcvDashbroad.adapter = adapter
         var layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
+
         rcvDashbroad.layoutManager = layoutManager
         viewModel.listWeatherOneDayDetail.observe(this) {
             adapter.setData(it as List<Weather1DayDetail>)
         }
 
-
     }
+
+    private fun handleToolbar() {
+        // setSupportActionBar()
+    }
+
+    private fun setLanguage(lang: String) {
+        val locale = Locale(lang)
+        var resource = this.resources
+        var configuration = resource.configuration
+        configuration.setLocale(locale)
+        resource.updateConfiguration(configuration, resource.displayMetrics)
+        startActivity(Intent(this, DashBroadActivity::class.java))
+        finish()
+    }
+
 
     override fun getViewModel(): Class<DashBroadViewModel> {
         return DashBroadViewModel::class.java
@@ -68,5 +94,18 @@ class DashBroadActivity : BaseActivity<ActivityDashBroadBinding, DashBroadViewMo
             viewModel.getDataWeatherFor5Day()
         }
     }
+
+
+//    private class ViewHolder internal constructor() {
+//        private val mDuoDrawerLayout: DuoDrawerLayout
+//        private val mDuoMenuView: DuoMenuView
+//        private val mToolbar: Toolbar
+//
+//        init {
+////            mDuoDrawerLayout = drawerLayout
+////            mDuoMenuView = mDuoDrawerLayout.menuView as DuoMenuView
+////            mToolbar = findViewById<View>(R.id.toolbar) as Toolbar
+//        }
+//    }
 
 }

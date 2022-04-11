@@ -1,6 +1,7 @@
 package com.example.weather_app_mvvp.app
 
 import android.app.Application
+import com.example.weather_app_mvvp.app.di.netWorkModule
 import org.koin.core.context.startKoin
 
 class Application() : Application() {
@@ -9,8 +10,9 @@ class Application() : Application() {
         super.onCreate()
 
         startKoin {
-
-
+            modules(
+                netWorkModule,
+                )
         }
     }
 }

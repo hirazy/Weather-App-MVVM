@@ -4,6 +4,9 @@ package com.example.weather_app_mvvp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
@@ -14,18 +17,40 @@ import com.example.weather_app_mvvp.R;
 import com.example.weather_app_mvvp.app.ui.dashbroad.DashBroadViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
+import nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout;
 
 public abstract class ActivityDashBroadBinding extends ViewDataBinding {
   @NonNull
+  public final ImageButton btnNav;
+
+  @NonNull
+  public final DuoDrawerLayout drawerLayout;
+
+  @NonNull
+  public final ImageView imgDashboard;
+
+  @NonNull
+  public final RelativeLayout layoutDashboard;
+
+  @NonNull
   public final RecyclerView rcvDashbroad;
+
+  @NonNull
+  public final RelativeLayout tbDashBoard;
 
   @Bindable
   protected DashBroadViewModel mVmodel;
 
   protected ActivityDashBroadBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView rcvDashbroad) {
+      ImageButton btnNav, DuoDrawerLayout drawerLayout, ImageView imgDashboard,
+      RelativeLayout layoutDashboard, RecyclerView rcvDashbroad, RelativeLayout tbDashBoard) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.btnNav = btnNav;
+    this.drawerLayout = drawerLayout;
+    this.imgDashboard = imgDashboard;
+    this.layoutDashboard = layoutDashboard;
     this.rcvDashbroad = rcvDashbroad;
+    this.tbDashBoard = tbDashBoard;
   }
 
   public abstract void setVmodel(@Nullable DashBroadViewModel vmodel);

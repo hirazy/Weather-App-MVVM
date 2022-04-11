@@ -1,9 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.algolia:instantsearch-insights:2.10.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b06b51f4d0e5b52e4d32532792af6f5/jetified-instantsearch-insights-2.10.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/881fef68cd9d404af4c6d013f6c2620a/jetified-instantsearch-insights-2.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04d32df5ead96d002346ed45de0b14a7/jetified-instantsearch-insights-2.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cec670fd1157c9919962d314cfe8d7a1/transformed/jetified-instantsearch-insights-2.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9cd94ec8211585358601895eaa06e18a/transformed/jetified-instantsearch-insights-2.10.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9cd94ec8211585358601895eaa06e18a/transformed/jetified-instantsearch-insights-2.10.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9cd94ec8211585358601895eaa06e18a/transformed/jetified-instantsearch-insights-2.10.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/instantsearch-insights/2.10.0/763d8de46d6a5a84f0612502bbdfe08778014a92/instantsearch-insights-2.10.0-javadoc.jar!/" />

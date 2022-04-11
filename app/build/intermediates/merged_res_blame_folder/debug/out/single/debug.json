@@ -1,0 +1,230 @@
+[
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\font_font_1.ttf.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\font\\font_1.ttf"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_app_widget.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\app_widget.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a03d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a03d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_bg_splash_1.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-mdpi\\bg_splash_1.jpg"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_item_city.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_city.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_setting.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_item_rcv_dashbroad.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_rcv_dashbroad.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_arrow_back.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_arrow_back.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dash_broad.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_dash_broad.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a02d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a02d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_search.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\search.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_weather_detail.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_weather_detail.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog_loading.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\dialog_loading.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a03n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a03n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a01d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a01d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_search_black.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_search_black.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_splash.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\bg_splash.jpg"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a50n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a50n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_custom_bg_text_today.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\custom_bg_text_today.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a13d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a13d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a02n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a02n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_launcher.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_launcher.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a13n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a13n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a09d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a09d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a04d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a04d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a50d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a50d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a01n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a01n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_bg_splash.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\bg_splash.jpg"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_city.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\bg_city.jpg"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a09n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a09n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_splash_1.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\bg_splash_1.jpg"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_layout_blur.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\bg_layout_blur.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a11d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a11d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a04n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a04n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a10d_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a10d_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a11n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a11n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a10n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a10n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_menu.png.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-xhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\drawable_a1232n_svg.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\drawable\\a1232n_svg.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\layout_item_rcv_weather_detail.xml.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_rcv_weather_detail.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_bg_city.jpg.flat",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\mipmap-mdpi\\bg_city.jpg"
+    }
+]

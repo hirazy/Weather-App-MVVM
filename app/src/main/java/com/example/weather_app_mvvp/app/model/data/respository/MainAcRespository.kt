@@ -26,6 +26,8 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.lang.Class as Class
 
+
+
 object MainAcRespository {
 
     private lateinit var api: Api

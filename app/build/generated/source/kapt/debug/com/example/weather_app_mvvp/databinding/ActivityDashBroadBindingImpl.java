@@ -14,11 +14,13 @@ public class ActivityDashBroadBindingImpl extends ActivityDashBroadBinding imple
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.rcvDashbroad, 7);
+        sViewsWithIds.put(R.id.layoutDashboard, 7);
+        sViewsWithIds.put(R.id.imgDashboard, 8);
+        sViewsWithIds.put(R.id.tbDashBoard, 9);
+        sViewsWithIds.put(R.id.btnNav, 10);
+        sViewsWithIds.put(R.id.rcvDashbroad, 11);
     }
     // views
-    @NonNull
-    private final android.widget.LinearLayout mboundView0;
     @NonNull
     private final android.widget.TextView mboundView1;
     @NonNull
@@ -39,14 +41,18 @@ public class ActivityDashBroadBindingImpl extends ActivityDashBroadBinding imple
     // Inverse Binding Event Handlers
 
     public ActivityDashBroadBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivityDashBroadBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 4
-            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
+            , (android.widget.ImageButton) bindings[10]
+            , (nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout) bindings[0]
+            , (android.widget.ImageView) bindings[8]
+            , (android.widget.RelativeLayout) bindings[7]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[11]
+            , (android.widget.RelativeLayout) bindings[9]
             );
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.drawerLayout.setTag(null);
         this.mboundView1 = (android.widget.TextView) bindings[1];
         this.mboundView1.setTag(null);
         this.mboundView2 = (android.widget.ImageView) bindings[2];

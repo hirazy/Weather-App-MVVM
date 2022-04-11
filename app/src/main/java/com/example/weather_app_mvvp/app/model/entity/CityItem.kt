@@ -7,50 +7,50 @@ import com.google.gson.annotations.SerializedName
 
 data class SearchResponse(
     @SerializedName("hits")
-    val cityItem: List<CityItem>
+    var cityItem: List<CityItem>
 )
 
 
 @Entity(tableName = "CITY_ITEM")
 data class CityItem(
     @SerializedName("country")
-    val country: String? = null,
+    var country: String? = "",
 
     @SerializedName("country_code")
-    val countryCode: String? = null,
+    var countryCode: String? = "",
 
     @SerializedName("is_city")
-    val isCity: Boolean? = null,
+    var isCity: Boolean? = true,
 
     @SerializedName("is_country")
-    val isCountry: Boolean? = null,
+    var isCountry: Boolean? = true,
 
     @SerializedName("administrative")
-    val administrative: List<String>? = null,
+    var administrative: List<String>? = null,
 
     @SerializedName("admin_level")
-    val adminLevel: Int? = null,
+    var adminLevel: Int? = null,
 
     @SerializedName("postcode")
-    val postcode: List<String>? = null,
+    var postcode: List<String>? = null,
 
     @SerializedName("county")
-    val county: List<String>? = null,
+    var county: List<String>? = null,
 
     @SerializedName("_geoloc")
-    val geoloc: Geoloc? = null,
+    var geoloc: Geoloc? = null,
 
     @SerializedName("importance")
-    val importance: Int? = null,
+    var importance: Int? = null,
 
     @SerializedName("objectID")
-    val objectID: String? = null,
+    var objectID: String? = null,
 
     @SerializedName("is_suburb")
-    val isSuburb: Boolean? = null,
+    var isSuburb: Boolean? = null,
 
     @SerializedName("locale_names")
-    val localeNames: List<String>? = null,
+    var localeNames: List<String>? = null,
 
     @PrimaryKey(autoGenerate = false) var id: Int? = null
 ) : OBase()
@@ -58,8 +58,8 @@ data class CityItem(
 data class Geoloc(
 
     @SerializedName("lng")
-    val lng: Double? = null,
+    var lng: Double? = null,
 
     @SerializedName("lat")
-    val lat: Double? = null
+    var lat: Double? = null
 ) : OBase()

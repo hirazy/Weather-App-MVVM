@@ -72,11 +72,7 @@ class DashBroadViewModel : BaseViewModel() {
             if (Utils.isNetworkAvailable(context)) {
                 DashBroadAcResponsitory.setDataInToDataBase(weather5DayData.value!!)
             }
-
-
         }
-
-
     }
 
     fun startActitvity(cls: Class<*>, data: Weather1DayDetail) {

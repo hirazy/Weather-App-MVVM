@@ -17,48 +17,44 @@ public class ItemRcvDashbroadBindingImpl extends ItemRcvDashbroadBinding  {
     }
     // views
     @NonNull
-    private final com.loopeer.shadow.ShadowView mboundView0;
+    private final androidx.cardview.widget.CardView mboundView0;
     @NonNull
-    private final android.widget.LinearLayout mboundView1;
+    private final android.widget.TextView mboundView1;
     @NonNull
     private final android.widget.TextView mboundView2;
     @NonNull
-    private final android.widget.TextView mboundView3;
+    private final android.widget.ImageView mboundView3;
     @NonNull
-    private final android.widget.ImageView mboundView4;
+    private final android.widget.TextView mboundView4;
     @NonNull
     private final android.widget.TextView mboundView5;
     @NonNull
     private final android.widget.TextView mboundView6;
-    @NonNull
-    private final android.widget.TextView mboundView7;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ItemRcvDashbroadBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ItemRcvDashbroadBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
             );
-        this.mboundView0 = (com.loopeer.shadow.ShadowView) bindings[0];
+        this.mboundView0 = (androidx.cardview.widget.CardView) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
+        this.mboundView1 = (android.widget.TextView) bindings[1];
         this.mboundView1.setTag(null);
         this.mboundView2 = (android.widget.TextView) bindings[2];
         this.mboundView2.setTag(null);
-        this.mboundView3 = (android.widget.TextView) bindings[3];
+        this.mboundView3 = (android.widget.ImageView) bindings[3];
         this.mboundView3.setTag(null);
-        this.mboundView4 = (android.widget.ImageView) bindings[4];
+        this.mboundView4 = (android.widget.TextView) bindings[4];
         this.mboundView4.setTag(null);
         this.mboundView5 = (android.widget.TextView) bindings[5];
         this.mboundView5.setTag(null);
         this.mboundView6 = (android.widget.TextView) bindings[6];
         this.mboundView6.setTag(null);
-        this.mboundView7 = (android.widget.TextView) bindings[7];
-        this.mboundView7.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -212,17 +208,17 @@ public class ItemRcvDashbroadBindingImpl extends ItemRcvDashbroadBinding  {
         if ((dirtyFlags & 0x5L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView1, androidx.databinding.adapters.Converters.convertColorToDrawable(modelSetColor));
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView2, modelSetTime);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, modelSetDate);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, modelGetTempShowJavaLangStringC);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, modelTempMinJavaLangStringC);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView7, modelTempMaxJavaLangStringC);
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView0, androidx.databinding.adapters.Converters.convertColorToDrawable(modelSetColor));
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView1, modelSetTime);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView2, modelSetDate);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, modelGetTempShowJavaLangStringC);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, modelTempMinJavaLangStringC);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView6, modelTempMaxJavaLangStringC);
         }
         if ((dirtyFlags & 0x7L) != 0) {
             // api target 1
 
-            com.example.weather_app_mvvp.base.utils.BindingUtilsKt.loadIcon(this.mboundView4, modelWeatherShowWeather0Icon);
+            com.example.weather_app_mvvp.base.utils.BindingUtilsKt.loadIcon(this.mboundView3, modelWeatherShowWeather0Icon);
         }
     }
     // Listener Stub Implementations

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rcv_weather_detail.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_rcv_weather_detail.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_city.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_city.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_setting.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_rcv_dashbroad.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\item_rcv_dashbroad.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_weather_detail.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_weather_detail.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_launcher.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_launcher.xml"
+    },
+    {
+        "merged": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dash_broad.xml",
+        "source": "D:\\ME\\2022\\Android\\weather_app_mvvm\\app\\src\\main\\res\\layout\\activity_dash_broad.xml"
+    }
+]

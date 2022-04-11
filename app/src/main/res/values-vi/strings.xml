@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hirazy Weather</string>
+
+    <string name="tvWeather">Thời tiết</string>
+    <string name="tvNextFiveDays">5 Ngày Tới </string>
+    <string name="tvHumidity">Độ ẩm</string>
+
+    <string name="tvMonday">Thứ hai</string>
+    <string name="tvTuesday">Thứ ba</string>
+    <string name="tvWednesday">Thứ tư</string>
+    <string name="tvThursday">Thứ năm</string>
+    <string name="tvFriday">Thứ sáu</string>
+    <string name="tvSaturday">Thứ bảy</string>
+    <string name="tvSunday">Chủ nhật</string>
+</resources>

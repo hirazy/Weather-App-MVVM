@@ -1,9 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.algolia:algoliasearch-android:3.27.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b93373a088723f108e39d12da91b180/jetified-algoliasearch-android-3.27.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b93373a088723f108e39d12da91b180/jetified-algoliasearch-android-3.27.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b93373a088723f108e39d12da91b180/jetified-algoliasearch-android-3.27.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9089625565e71885a8c4cb03c0009c5/jetified-algoliasearch-android-3.27.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/798893ef230554adf7dcd392b7c078ac/jetified-algoliasearch-android-3.27.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/749d290f5f297fa841498ef52d009cfe/transformed/jetified-algoliasearch-android-3.27.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ee005205e0602ffcd34a94c7f3e41cf5/transformed/jetified-algoliasearch-android-3.27.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ee005205e0602ffcd34a94c7f3e41cf5/transformed/jetified-algoliasearch-android-3.27.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ee005205e0602ffcd34a94c7f3e41cf5/transformed/jetified-algoliasearch-android-3.27.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/algoliasearch-android/3.27.0/282b833b47b6f4f767d6b8d2d11b97e51d7f11c6/algoliasearch-android-3.27.0-javadoc.jar!/" />

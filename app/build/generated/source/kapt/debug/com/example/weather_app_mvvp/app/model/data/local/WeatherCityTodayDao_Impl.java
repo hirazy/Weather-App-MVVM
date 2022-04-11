@@ -39,145 +39,145 @@ public final class WeatherCityTodayDao_Impl implements WeatherCityTodayDao {
     this.__insertionAdapterOfWeatherInfo = new EntityInsertionAdapter<WeatherInfo>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `WeatherInfo` (`colorStatus`,`coord`,`weather`,`base`,`main`,`visibility`,`wind`,`clouds`,`dt`,`sys`,`timezone`,`name`,`cod`,`id`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `WeatherInfo` (`coord`,`weather`,`base`,`main`,`visibility`,`wind`,`clouds`,`dt`,`sys`,`timezone`,`name`,`cod`,`id`,`colorStatus`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, WeatherInfo value) {
-        stmt.bindLong(1, value.getColorStatus());
         final String _tmp;
         _tmp = DataConvertType.coordToString(value.getCoord());
         if (_tmp == null) {
-          stmt.bindNull(2);
+          stmt.bindNull(1);
         } else {
-          stmt.bindString(2, _tmp);
+          stmt.bindString(1, _tmp);
         }
         final String _tmp_1;
         _tmp_1 = DataConvertType.weatherListToString(value.getWeather());
         if (_tmp_1 == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(2);
         } else {
-          stmt.bindString(3, _tmp_1);
+          stmt.bindString(2, _tmp_1);
         }
         if (value.getBase() == null) {
-          stmt.bindNull(4);
+          stmt.bindNull(3);
         } else {
-          stmt.bindString(4, value.getBase());
+          stmt.bindString(3, value.getBase());
         }
         final String _tmp_2;
         _tmp_2 = DataConvertType.mainToString(value.getMain());
         if (_tmp_2 == null) {
-          stmt.bindNull(5);
+          stmt.bindNull(4);
         } else {
-          stmt.bindString(5, _tmp_2);
+          stmt.bindString(4, _tmp_2);
         }
-        stmt.bindLong(6, value.getVisibility());
+        stmt.bindLong(5, value.getVisibility());
         final String _tmp_3;
         _tmp_3 = DataConvertType.windToString(value.getWind());
         if (_tmp_3 == null) {
-          stmt.bindNull(7);
+          stmt.bindNull(6);
         } else {
-          stmt.bindString(7, _tmp_3);
+          stmt.bindString(6, _tmp_3);
         }
         final String _tmp_4;
         _tmp_4 = DataConvertType.cloudsToString(value.getClouds());
         if (_tmp_4 == null) {
-          stmt.bindNull(8);
+          stmt.bindNull(7);
         } else {
-          stmt.bindString(8, _tmp_4);
+          stmt.bindString(7, _tmp_4);
         }
-        stmt.bindLong(9, value.getDt());
+        stmt.bindLong(8, value.getDt());
         final String _tmp_5;
         _tmp_5 = DataConvertType.sysToString(value.getSys());
         if (_tmp_5 == null) {
-          stmt.bindNull(10);
+          stmt.bindNull(9);
         } else {
-          stmt.bindString(10, _tmp_5);
+          stmt.bindString(9, _tmp_5);
         }
-        stmt.bindLong(11, value.getTimezone());
+        stmt.bindLong(10, value.getTimezone());
         if (value.getName() == null) {
-          stmt.bindNull(12);
+          stmt.bindNull(11);
         } else {
-          stmt.bindString(12, value.getName());
+          stmt.bindString(11, value.getName());
         }
-        stmt.bindLong(13, value.getCod());
+        stmt.bindLong(12, value.getCod());
         if (value.getId() == null) {
-          stmt.bindNull(14);
+          stmt.bindNull(13);
         } else {
-          stmt.bindLong(14, value.getId());
+          stmt.bindLong(13, value.getId());
         }
+        stmt.bindLong(14, value.getColorStatus());
       }
     };
     this.__insertionAdapterOfWeatherInfo_1 = new EntityInsertionAdapter<WeatherInfo>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `WeatherInfo` (`colorStatus`,`coord`,`weather`,`base`,`main`,`visibility`,`wind`,`clouds`,`dt`,`sys`,`timezone`,`name`,`cod`,`id`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `WeatherInfo` (`coord`,`weather`,`base`,`main`,`visibility`,`wind`,`clouds`,`dt`,`sys`,`timezone`,`name`,`cod`,`id`,`colorStatus`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, WeatherInfo value) {
-        stmt.bindLong(1, value.getColorStatus());
         final String _tmp;
         _tmp = DataConvertType.coordToString(value.getCoord());
         if (_tmp == null) {
-          stmt.bindNull(2);
+          stmt.bindNull(1);
         } else {
-          stmt.bindString(2, _tmp);
+          stmt.bindString(1, _tmp);
         }
         final String _tmp_1;
         _tmp_1 = DataConvertType.weatherListToString(value.getWeather());
         if (_tmp_1 == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(2);
         } else {
-          stmt.bindString(3, _tmp_1);
+          stmt.bindString(2, _tmp_1);
         }
         if (value.getBase() == null) {
-          stmt.bindNull(4);
+          stmt.bindNull(3);
         } else {
-          stmt.bindString(4, value.getBase());
+          stmt.bindString(3, value.getBase());
         }
         final String _tmp_2;
         _tmp_2 = DataConvertType.mainToString(value.getMain());
         if (_tmp_2 == null) {
-          stmt.bindNull(5);
+          stmt.bindNull(4);
         } else {
-          stmt.bindString(5, _tmp_2);
+          stmt.bindString(4, _tmp_2);
         }
-        stmt.bindLong(6, value.getVisibility());
+        stmt.bindLong(5, value.getVisibility());
         final String _tmp_3;
         _tmp_3 = DataConvertType.windToString(value.getWind());
         if (_tmp_3 == null) {
-          stmt.bindNull(7);
+          stmt.bindNull(6);
         } else {
-          stmt.bindString(7, _tmp_3);
+          stmt.bindString(6, _tmp_3);
         }
         final String _tmp_4;
         _tmp_4 = DataConvertType.cloudsToString(value.getClouds());
         if (_tmp_4 == null) {
-          stmt.bindNull(8);
+          stmt.bindNull(7);
         } else {
-          stmt.bindString(8, _tmp_4);
+          stmt.bindString(7, _tmp_4);
         }
-        stmt.bindLong(9, value.getDt());
+        stmt.bindLong(8, value.getDt());
         final String _tmp_5;
         _tmp_5 = DataConvertType.sysToString(value.getSys());
         if (_tmp_5 == null) {
-          stmt.bindNull(10);
+          stmt.bindNull(9);
         } else {
-          stmt.bindString(10, _tmp_5);
+          stmt.bindString(9, _tmp_5);
         }
-        stmt.bindLong(11, value.getTimezone());
+        stmt.bindLong(10, value.getTimezone());
         if (value.getName() == null) {
-          stmt.bindNull(12);
+          stmt.bindNull(11);
         } else {
-          stmt.bindString(12, value.getName());
+          stmt.bindString(11, value.getName());
         }
-        stmt.bindLong(13, value.getCod());
+        stmt.bindLong(12, value.getCod());
         if (value.getId() == null) {
-          stmt.bindNull(14);
+          stmt.bindNull(13);
         } else {
-          stmt.bindLong(14, value.getId());
+          stmt.bindLong(13, value.getId());
         }
+        stmt.bindLong(14, value.getColorStatus());
       }
     };
     this.__deletionAdapterOfWeatherInfo = new EntityDeletionOrUpdateAdapter<WeatherInfo>(__db) {
@@ -198,73 +198,73 @@ public final class WeatherCityTodayDao_Impl implements WeatherCityTodayDao {
     this.__updateAdapterOfWeatherInfo = new EntityDeletionOrUpdateAdapter<WeatherInfo>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `WeatherInfo` SET `colorStatus` = ?,`coord` = ?,`weather` = ?,`base` = ?,`main` = ?,`visibility` = ?,`wind` = ?,`clouds` = ?,`dt` = ?,`sys` = ?,`timezone` = ?,`name` = ?,`cod` = ?,`id` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `WeatherInfo` SET `coord` = ?,`weather` = ?,`base` = ?,`main` = ?,`visibility` = ?,`wind` = ?,`clouds` = ?,`dt` = ?,`sys` = ?,`timezone` = ?,`name` = ?,`cod` = ?,`id` = ?,`colorStatus` = ? WHERE `id` = ?";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, WeatherInfo value) {
-        stmt.bindLong(1, value.getColorStatus());
         final String _tmp;
         _tmp = DataConvertType.coordToString(value.getCoord());
         if (_tmp == null) {
-          stmt.bindNull(2);
+          stmt.bindNull(1);
         } else {
-          stmt.bindString(2, _tmp);
+          stmt.bindString(1, _tmp);
         }
         final String _tmp_1;
         _tmp_1 = DataConvertType.weatherListToString(value.getWeather());
         if (_tmp_1 == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(2);
         } else {
-          stmt.bindString(3, _tmp_1);
+          stmt.bindString(2, _tmp_1);
         }
         if (value.getBase() == null) {
-          stmt.bindNull(4);
+          stmt.bindNull(3);
         } else {
-          stmt.bindString(4, value.getBase());
+          stmt.bindString(3, value.getBase());
         }
         final String _tmp_2;
         _tmp_2 = DataConvertType.mainToString(value.getMain());
         if (_tmp_2 == null) {
-          stmt.bindNull(5);
+          stmt.bindNull(4);
         } else {
-          stmt.bindString(5, _tmp_2);
+          stmt.bindString(4, _tmp_2);
         }
-        stmt.bindLong(6, value.getVisibility());
+        stmt.bindLong(5, value.getVisibility());
         final String _tmp_3;
         _tmp_3 = DataConvertType.windToString(value.getWind());
         if (_tmp_3 == null) {
-          stmt.bindNull(7);
+          stmt.bindNull(6);
         } else {
-          stmt.bindString(7, _tmp_3);
+          stmt.bindString(6, _tmp_3);
         }
         final String _tmp_4;
         _tmp_4 = DataConvertType.cloudsToString(value.getClouds());
         if (_tmp_4 == null) {
-          stmt.bindNull(8);
+          stmt.bindNull(7);
         } else {
-          stmt.bindString(8, _tmp_4);
+          stmt.bindString(7, _tmp_4);
         }
-        stmt.bindLong(9, value.getDt());
+        stmt.bindLong(8, value.getDt());
         final String _tmp_5;
         _tmp_5 = DataConvertType.sysToString(value.getSys());
         if (_tmp_5 == null) {
-          stmt.bindNull(10);
+          stmt.bindNull(9);
         } else {
-          stmt.bindString(10, _tmp_5);
+          stmt.bindString(9, _tmp_5);
         }
-        stmt.bindLong(11, value.getTimezone());
+        stmt.bindLong(10, value.getTimezone());
         if (value.getName() == null) {
-          stmt.bindNull(12);
+          stmt.bindNull(11);
         } else {
-          stmt.bindString(12, value.getName());
+          stmt.bindString(11, value.getName());
         }
-        stmt.bindLong(13, value.getCod());
+        stmt.bindLong(12, value.getCod());
         if (value.getId() == null) {
-          stmt.bindNull(14);
+          stmt.bindNull(13);
         } else {
-          stmt.bindLong(14, value.getId());
+          stmt.bindLong(13, value.getId());
         }
+        stmt.bindLong(14, value.getColorStatus());
         if (value.getId() == null) {
           stmt.bindNull(15);
         } else {
@@ -331,7 +331,6 @@ public final class WeatherCityTodayDao_Impl implements WeatherCityTodayDao {
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
-      final int _cursorIndexOfColorStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "colorStatus");
       final int _cursorIndexOfCoord = CursorUtil.getColumnIndexOrThrow(_cursor, "coord");
       final int _cursorIndexOfWeather = CursorUtil.getColumnIndexOrThrow(_cursor, "weather");
       final int _cursorIndexOfBase = CursorUtil.getColumnIndexOrThrow(_cursor, "base");
@@ -345,6 +344,7 @@ public final class WeatherCityTodayDao_Impl implements WeatherCityTodayDao {
       final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
       final int _cursorIndexOfCod = CursorUtil.getColumnIndexOrThrow(_cursor, "cod");
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfColorStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "colorStatus");
       final WeatherInfo _result;
       if(_cursor.moveToFirst()) {
         final Coord _tmpCoord;

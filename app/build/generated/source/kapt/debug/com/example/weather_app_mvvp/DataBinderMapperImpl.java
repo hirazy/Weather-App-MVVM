@@ -9,6 +9,8 @@ import androidx.databinding.ViewDataBinding;
 import com.example.weather_app_mvvp.databinding.ActivityDashBroadBindingImpl;
 import com.example.weather_app_mvvp.databinding.ActivityLauncherBindingImpl;
 import com.example.weather_app_mvvp.databinding.ActivityMainBindingImpl;
+import com.example.weather_app_mvvp.databinding.ActivitySettingBindingImpl;
+import com.example.weather_app_mvvp.databinding.ActivitySplashBindingImpl;
 import com.example.weather_app_mvvp.databinding.ActivityWeatherDetailBindingImpl;
 import com.example.weather_app_mvvp.databinding.ItemCityBindingImpl;
 import com.example.weather_app_mvvp.databinding.ItemRcvDashbroadBindingImpl;
@@ -30,20 +32,26 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYMAIN = 3;
 
-  private static final int LAYOUT_ACTIVITYWEATHERDETAIL = 4;
+  private static final int LAYOUT_ACTIVITYSETTING = 4;
 
-  private static final int LAYOUT_ITEMCITY = 5;
+  private static final int LAYOUT_ACTIVITYSPLASH = 5;
 
-  private static final int LAYOUT_ITEMRCVDASHBROAD = 6;
+  private static final int LAYOUT_ACTIVITYWEATHERDETAIL = 6;
 
-  private static final int LAYOUT_ITEMRCVWEATHERDETAIL = 7;
+  private static final int LAYOUT_ITEMCITY = 7;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
+  private static final int LAYOUT_ITEMRCVDASHBROAD = 8;
+
+  private static final int LAYOUT_ITEMRCVWEATHERDETAIL = 9;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(9);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_dash_broad, LAYOUT_ACTIVITYDASHBROAD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_launcher, LAYOUT_ACTIVITYLAUNCHER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_setting, LAYOUT_ACTIVITYSETTING);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.activity_weather_detail, LAYOUT_ACTIVITYWEATHERDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.item_city, LAYOUT_ITEMCITY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.weather_app_mvvp.R.layout.item_rcv_dashbroad, LAYOUT_ITEMRCVDASHBROAD);
@@ -76,6 +84,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSETTING: {
+          if ("layout/activity_setting_0".equals(tag)) {
+            return new ActivitySettingBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_setting is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSPLASH: {
+          if ("layout/activity_splash_0".equals(tag)) {
+            return new ActivitySplashBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYWEATHERDETAIL: {
           if ("layout/activity_weather_detail_0".equals(tag)) {
@@ -158,12 +178,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(9);
 
     static {
       sKeys.put("layout/activity_dash_broad_0", com.example.weather_app_mvvp.R.layout.activity_dash_broad);
       sKeys.put("layout/activity_launcher_0", com.example.weather_app_mvvp.R.layout.activity_launcher);
       sKeys.put("layout/activity_main_0", com.example.weather_app_mvvp.R.layout.activity_main);
+      sKeys.put("layout/activity_setting_0", com.example.weather_app_mvvp.R.layout.activity_setting);
+      sKeys.put("layout/activity_splash_0", com.example.weather_app_mvvp.R.layout.activity_splash);
       sKeys.put("layout/activity_weather_detail_0", com.example.weather_app_mvvp.R.layout.activity_weather_detail);
       sKeys.put("layout/item_city_0", com.example.weather_app_mvvp.R.layout.item_city);
       sKeys.put("layout/item_rcv_dashbroad_0", com.example.weather_app_mvvp.R.layout.item_rcv_dashbroad);

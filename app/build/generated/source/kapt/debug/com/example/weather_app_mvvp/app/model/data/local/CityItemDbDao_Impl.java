@@ -416,10 +416,13 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final CityItem _result;
       if(_cursor.moveToFirst()) {
+        _result = new CityItem();
         final String _tmpCountry;
         _tmpCountry = _cursor.getString(_cursorIndexOfCountry);
+        _result.setCountry(_tmpCountry);
         final String _tmpCountryCode;
         _tmpCountryCode = _cursor.getString(_cursorIndexOfCountryCode);
+        _result.setCountryCode(_tmpCountryCode);
         final Boolean _tmpIsCity;
         final Integer _tmp;
         if (_cursor.isNull(_cursorIndexOfIsCity)) {
@@ -428,6 +431,7 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp = _cursor.getInt(_cursorIndexOfIsCity);
         }
         _tmpIsCity = _tmp == null ? null : _tmp != 0;
+        _result.setCity(_tmpIsCity);
         final Boolean _tmpIsCountry;
         final Integer _tmp_1;
         if (_cursor.isNull(_cursorIndexOfIsCountry)) {
@@ -436,36 +440,44 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp_1 = _cursor.getInt(_cursorIndexOfIsCountry);
         }
         _tmpIsCountry = _tmp_1 == null ? null : _tmp_1 != 0;
+        _result.setCountry(_tmpIsCountry);
         final List<String> _tmpAdministrative;
         final String _tmp_2;
         _tmp_2 = _cursor.getString(_cursorIndexOfAdministrative);
         _tmpAdministrative = DataConvertType.stringToSomeObjectList(_tmp_2);
+        _result.setAdministrative(_tmpAdministrative);
         final Integer _tmpAdminLevel;
         if (_cursor.isNull(_cursorIndexOfAdminLevel)) {
           _tmpAdminLevel = null;
         } else {
           _tmpAdminLevel = _cursor.getInt(_cursorIndexOfAdminLevel);
         }
+        _result.setAdminLevel(_tmpAdminLevel);
         final List<String> _tmpPostcode;
         final String _tmp_3;
         _tmp_3 = _cursor.getString(_cursorIndexOfPostcode);
         _tmpPostcode = DataConvertType.stringToSomeObjectList(_tmp_3);
+        _result.setPostcode(_tmpPostcode);
         final List<String> _tmpCounty;
         final String _tmp_4;
         _tmp_4 = _cursor.getString(_cursorIndexOfCounty);
         _tmpCounty = DataConvertType.stringToSomeObjectList(_tmp_4);
+        _result.setCounty(_tmpCounty);
         final Geoloc _tmpGeoloc;
         final String _tmp_5;
         _tmp_5 = _cursor.getString(_cursorIndexOfGeoloc);
         _tmpGeoloc = DataConvertType.stringToSomeObject(_tmp_5);
+        _result.setGeoloc(_tmpGeoloc);
         final Integer _tmpImportance;
         if (_cursor.isNull(_cursorIndexOfImportance)) {
           _tmpImportance = null;
         } else {
           _tmpImportance = _cursor.getInt(_cursorIndexOfImportance);
         }
+        _result.setImportance(_tmpImportance);
         final String _tmpObjectID;
         _tmpObjectID = _cursor.getString(_cursorIndexOfObjectID);
+        _result.setObjectID(_tmpObjectID);
         final Boolean _tmpIsSuburb;
         final Integer _tmp_6;
         if (_cursor.isNull(_cursorIndexOfIsSuburb)) {
@@ -474,17 +486,19 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp_6 = _cursor.getInt(_cursorIndexOfIsSuburb);
         }
         _tmpIsSuburb = _tmp_6 == null ? null : _tmp_6 != 0;
+        _result.setSuburb(_tmpIsSuburb);
         final List<String> _tmpLocaleNames;
         final String _tmp_7;
         _tmp_7 = _cursor.getString(_cursorIndexOfLocaleNames);
         _tmpLocaleNames = DataConvertType.stringToSomeObjectList(_tmp_7);
+        _result.setLocaleNames(_tmpLocaleNames);
         final Integer _tmpId;
         if (_cursor.isNull(_cursorIndexOfId)) {
           _tmpId = null;
         } else {
           _tmpId = _cursor.getInt(_cursorIndexOfId);
         }
-        _result = new CityItem(_tmpCountry,_tmpCountryCode,_tmpIsCity,_tmpIsCountry,_tmpAdministrative,_tmpAdminLevel,_tmpPostcode,_tmpCounty,_tmpGeoloc,_tmpImportance,_tmpObjectID,_tmpIsSuburb,_tmpLocaleNames,_tmpId);
+        _result.setId(_tmpId);
       } else {
         _result = null;
       }
@@ -519,10 +533,13 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
       final List<CityItem> _result = new ArrayList<CityItem>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final CityItem _item;
+        _item = new CityItem();
         final String _tmpCountry;
         _tmpCountry = _cursor.getString(_cursorIndexOfCountry);
+        _item.setCountry(_tmpCountry);
         final String _tmpCountryCode;
         _tmpCountryCode = _cursor.getString(_cursorIndexOfCountryCode);
+        _item.setCountryCode(_tmpCountryCode);
         final Boolean _tmpIsCity;
         final Integer _tmp;
         if (_cursor.isNull(_cursorIndexOfIsCity)) {
@@ -531,6 +548,7 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp = _cursor.getInt(_cursorIndexOfIsCity);
         }
         _tmpIsCity = _tmp == null ? null : _tmp != 0;
+        _item.setCity(_tmpIsCity);
         final Boolean _tmpIsCountry;
         final Integer _tmp_1;
         if (_cursor.isNull(_cursorIndexOfIsCountry)) {
@@ -539,36 +557,44 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp_1 = _cursor.getInt(_cursorIndexOfIsCountry);
         }
         _tmpIsCountry = _tmp_1 == null ? null : _tmp_1 != 0;
+        _item.setCountry(_tmpIsCountry);
         final List<String> _tmpAdministrative;
         final String _tmp_2;
         _tmp_2 = _cursor.getString(_cursorIndexOfAdministrative);
         _tmpAdministrative = DataConvertType.stringToSomeObjectList(_tmp_2);
+        _item.setAdministrative(_tmpAdministrative);
         final Integer _tmpAdminLevel;
         if (_cursor.isNull(_cursorIndexOfAdminLevel)) {
           _tmpAdminLevel = null;
         } else {
           _tmpAdminLevel = _cursor.getInt(_cursorIndexOfAdminLevel);
         }
+        _item.setAdminLevel(_tmpAdminLevel);
         final List<String> _tmpPostcode;
         final String _tmp_3;
         _tmp_3 = _cursor.getString(_cursorIndexOfPostcode);
         _tmpPostcode = DataConvertType.stringToSomeObjectList(_tmp_3);
+        _item.setPostcode(_tmpPostcode);
         final List<String> _tmpCounty;
         final String _tmp_4;
         _tmp_4 = _cursor.getString(_cursorIndexOfCounty);
         _tmpCounty = DataConvertType.stringToSomeObjectList(_tmp_4);
+        _item.setCounty(_tmpCounty);
         final Geoloc _tmpGeoloc;
         final String _tmp_5;
         _tmp_5 = _cursor.getString(_cursorIndexOfGeoloc);
         _tmpGeoloc = DataConvertType.stringToSomeObject(_tmp_5);
+        _item.setGeoloc(_tmpGeoloc);
         final Integer _tmpImportance;
         if (_cursor.isNull(_cursorIndexOfImportance)) {
           _tmpImportance = null;
         } else {
           _tmpImportance = _cursor.getInt(_cursorIndexOfImportance);
         }
+        _item.setImportance(_tmpImportance);
         final String _tmpObjectID;
         _tmpObjectID = _cursor.getString(_cursorIndexOfObjectID);
+        _item.setObjectID(_tmpObjectID);
         final Boolean _tmpIsSuburb;
         final Integer _tmp_6;
         if (_cursor.isNull(_cursorIndexOfIsSuburb)) {
@@ -577,17 +603,19 @@ public final class CityItemDbDao_Impl implements CityItemDbDao {
           _tmp_6 = _cursor.getInt(_cursorIndexOfIsSuburb);
         }
         _tmpIsSuburb = _tmp_6 == null ? null : _tmp_6 != 0;
+        _item.setSuburb(_tmpIsSuburb);
         final List<String> _tmpLocaleNames;
         final String _tmp_7;
         _tmp_7 = _cursor.getString(_cursorIndexOfLocaleNames);
         _tmpLocaleNames = DataConvertType.stringToSomeObjectList(_tmp_7);
+        _item.setLocaleNames(_tmpLocaleNames);
         final Integer _tmpId;
         if (_cursor.isNull(_cursorIndexOfId)) {
           _tmpId = null;
         } else {
           _tmpId = _cursor.getInt(_cursorIndexOfId);
         }
-        _item = new CityItem(_tmpCountry,_tmpCountryCode,_tmpIsCity,_tmpIsCountry,_tmpAdministrative,_tmpAdminLevel,_tmpPostcode,_tmpCounty,_tmpGeoloc,_tmpImportance,_tmpObjectID,_tmpIsSuburb,_tmpLocaleNames,_tmpId);
+        _item.setId(_tmpId);
         _result.add(_item);
       }
       return _result;

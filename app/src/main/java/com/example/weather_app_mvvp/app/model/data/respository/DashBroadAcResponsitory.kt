@@ -1,5 +1,6 @@
 package com.example.weather_app_mvvp.app.model.data.respository
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -19,6 +20,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@SuppressLint("StaticFieldLeak")
 object DashBroadAcResponsitory {
     lateinit var api: Api
     lateinit var cityDao: CityItemDbDao

@@ -21,6 +21,4 @@ interface Api {
         @Query("lon") long: String,
         @Query("appid") apiKey: String
     ): Call<Weather5DayData>
-
-
 }

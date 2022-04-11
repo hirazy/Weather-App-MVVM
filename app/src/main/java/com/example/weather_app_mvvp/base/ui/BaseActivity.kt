@@ -2,6 +2,8 @@ package com.example.weather_app_mvvp.base.ui
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
@@ -16,6 +18,10 @@ abstract class BaseActivity<ViewBiding : ViewDataBinding, viewModel : BaseViewMo
     protected val TAG = BaseActivity::class.java.simpleName
     lateinit var loading: DialogLoading
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
         super.onCreate(savedInstanceState)
         ViewBiding =
             DataBindingUtil.setContentView(
